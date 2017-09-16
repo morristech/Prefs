@@ -23,21 +23,22 @@ Add it in your root build.gradle at the end of repositories:
 ## Usage
 Save primitive data types:
 ```java
-        Prefs.put(this, "name", "Trump"); //string
-        Prefs.put(this, "age",71f); //float
-        Prefs.put(this, "isPresident", true); //boolean
+        Prefs.put(context, "name", "Trump"); //string
+        Prefs.put(context, "age",71f); //float
+        Prefs.put(context, "isPresident", true); //boolean
 ```
 Retrieve above variables:
 ```java
-        String name = Prefs.getString(this, "name", "default");
-        float age = Prefs.getFloat(this, "age", 0f);
-        boolean isPresident = Prefs.getBoolean(this, "isPresident", false);
+        String name = Prefs.getString(context, "name", "default");
+        float age = Prefs.getFloat(context, "age", 0f);
+        boolean isPresident = Prefs.getBoolean(context, "isPresident", false);
 ```
 Save double data type:
 ```java
         double a = 123123.123;
-        Prefs.put(this, "someDouble", a); //double
-        double someDouble = Prefs.getDouble(this, "someDouble", 0);
+        Prefs.put(context, "someDouble", a); //double
+        double someDouble = Prefs.getDouble(context, "someDouble", 0);
 ```
+See more [here](https://github.com/AbduazizKayumov/Prefs/blob/master/app/src/main/java/com/abduaziz/sample/MainActivity.java) 
 
 [License](/LICENSE)
